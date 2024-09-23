@@ -26,9 +26,14 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3")
+	implementation("org.flywaydb:flyway-core")
 	compileOnly("org.projectlombok:lombok")
 	runtimeOnly("com.mysql:mysql-connector-j")
 	runtimeOnly("org.postgresql:postgresql")
+	// https://mvnrepository.com/artifact/org.flywaydb/flyway-gradle-plugin
+	runtimeOnly("org.flywaydb:flyway-gradle-plugin:3.0")
+	// https://mvnrepository.com/artifact/org.flywaydb/flyway-database-postgresql
+	runtimeOnly("org.flywaydb:flyway-database-postgresql:10.18.0")
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.3")

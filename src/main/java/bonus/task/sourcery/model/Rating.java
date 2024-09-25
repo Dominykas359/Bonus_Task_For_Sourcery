@@ -16,5 +16,5 @@ public class Rating {
     UUID id;
     UUID bookId;
     UUID userId;
-    Integer value;
+    Integer ratingValue;
 }

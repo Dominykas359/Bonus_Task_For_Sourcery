@@ -16,7 +16,6 @@ public class Book {
     UUID id;
     String title;
     Integer yearPublished;
-    Double rating;
     String author;
     String genre;
     String bookLanguage;
